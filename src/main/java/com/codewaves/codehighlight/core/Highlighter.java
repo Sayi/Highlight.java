@@ -23,6 +23,7 @@ public class Highlighter<E> {
       final Map<String, Language> languages = new HashMap<>();
       registerLanguage("apache", languages, new ApacheLanguage().build());
       registerLanguage("bash", languages, new BashLanguage().build());
+      registerLanguage("coffeescript", languages, new CoffeescriptLanguage().build());
       registerLanguage("cpp", languages, new CppLanguage().build());
       registerLanguage("cs", languages, new CsLanguage().build());
       registerLanguage("css", languages, new CssLanguage().build());
@@ -47,7 +48,7 @@ public class Highlighter<E> {
       registerLanguage("xml", languages, new XmlLanguage().build());
       registerLanguage("yaml", languages, new YamlLanguage().build());
       mLanguageMap = languages;
-      mLanguages = new String[] { "apache", "bash", "cpp", "cs", "css", "diff", "go", "groovy", "http", "ini", "java",
+      mLanguages = new String[] { "apache", "bash", "coffeescript", "cpp", "cs", "css", "diff", "go", "groovy", "http", "ini", "java",
               "javascript", "json", "makefile", "markdown", "objectivec", "perl", "php", "python", "ruby", "scala",
               "shell", "sql", "xml", "yaml" };
    }
